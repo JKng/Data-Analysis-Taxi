@@ -1,5 +1,4 @@
 # MJK-Taxi - Análise de dados sobre o caso Taxi 
-
 import json
 import sqlite3
 import pandas as pd
