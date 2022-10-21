@@ -145,7 +145,7 @@ plt.show()
 <img src = "ModelagemLogica.jpg">
 
 ## Quesito Bônus
-#### Qual o tempo médio das corridas nos dias de sábado e domingo e nas segunda-feira?
+#### Qual o tempo médio das corridas nos dias de sábado, domingo e nas segundas-feiras?
 ```python
 import json
 import sqlite3
