@@ -50,6 +50,8 @@ print(df.groupby('vendor_id')['total_amount'].sum())
 ## Questão 3. Histograma
 #### Histograma da distribuicao mensal, nos 4 anos, de corridas pagas em dinheiro
 ```python
+df = pd.read_json('atento0.json', orient='records', nrows=4000000, lines=True)
+df 
 # Verificar quantos tipos de pagamentos diferentes existem 
 print(df.groupby('payment_type').size())
 
@@ -100,6 +102,8 @@ plt.show()
 ## Questão 4. Gráfico de série temporal 
 #### Gráfico de série temporal contando a quantidade de gorjetas de cada dia, nos últimos 3 meses de 2012
 ```python
+df = pd.read_json('atento0.json', orient='records', nrows=4000000, lines=True)
+df 
 # Criar coluna de Dia, Mês e Ano
 df['day'] = df.dropoff_datetime.str.slice(8,10)
 df['month'] = df.dropoff_datetime.str.slice(5,7)
