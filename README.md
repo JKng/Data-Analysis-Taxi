@@ -20,7 +20,10 @@ df
 
 #### A distância média percorrida por viagens com no máximo 2 passageiros é:
 
+## Questão 3. RESULTADO
+
 <img src = "q3atento.jpg">
 
+## Questão 5. RESULTADO
 <img src = "ModelagemLogica.jpg">
-a
+
