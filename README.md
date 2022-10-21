@@ -133,10 +133,21 @@ df4 = dfq4.loc[dfq4["datafull"].between("2012-10-01", "2012-12-31")]
 df4
 
 # Questão 4. RESULTADO
+df4.plot(x='datafull', y='tip_amount')
+plt.xlabel("Data")
+plt.ylabel("Quantidade de gorjetas")
+plt.title("Gorjetas dos últimos 3 meses de 2012")
+plt.show()
+```
+<img src = "q3atento.jpg">
+
+#### Gráfico Alternativo dos últimos 3 meses de 2012
+```python
+# Questão 4. RESULTADO
 df4['tip_amount'].plot()
 plt.xlabel("Data")
-plt.ylabel("Quantidade de gorjeto")
-plt.title("Distribuição de gorjetas")
+plt.ylabel("Quantidade de gorjetas")
+plt.title("Gorjetas dos últimos 3 meses de 2012")
 plt.show()
 ```
 <img src = "q3atento.jpg">
