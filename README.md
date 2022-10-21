@@ -195,13 +195,18 @@ df
 # Extrair dia da semana da coluna 'pickup'
 df['dia-da-semana'] = df['pickt'].weekday()
 
+# Criando um DataFrame object de uma lista
+dfb = pd.DataFrame(df,
+                columns =['subtracao', 'dia-da-semana'])
+dfb
+
 # Selecionar linhas: sábado, domingo e segunda-feira
-df['saturday'] = df.loc[df['dia-da-semana'] == saturday]
-df['sunday'] = df.loc[df['dia-da-semana'] == sunday]
-df['monday'] = df.loc[df['dia-da-semana'] == monday]
+dfbonus['saturday'] = dfb.loc[df['dia-da-semana'] == saturday]
+dfbonus['sunday'] = dfb.loc[df['dia-da-semana'] == sunday]
+dfbonus['monday'] = dfb.loc[df['dia-da-semana'] == monday]
 
 # Calcular o tempo médio das corridas
-df.saturday.mean()
-df.sunday.mean()
-df.monday.mean()
+dfbonus.saturday.mean()
+dfbonus.sunday.mean()
+dfbonus.monday.mean()
 ```
