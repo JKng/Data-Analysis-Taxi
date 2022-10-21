@@ -139,18 +139,7 @@ plt.ylabel("Quantidade de gorjetas")
 plt.title("Gorjetas dos últimos 3 meses de 2012")
 plt.show()
 ```
-<img src = "q3atento.jpg">
-
-#### Gráfico Alternativo dos últimos 3 meses de 2012
-```python
-# Questão 4. RESULTADO
-df4['tip_amount'].plot()
-plt.xlabel("Data")
-plt.ylabel("Quantidade de gorjetas")
-plt.title("Gorjetas dos últimos 3 meses de 2012")
-plt.show()
-```
-<img src = "q3atento.jpg">
+<img src = "q4atento.jpg">
 
 ## Questão 5. RESULTADO
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
