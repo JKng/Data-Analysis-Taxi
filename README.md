@@ -22,14 +22,14 @@ df = pd.read_json('atento0.json', orient='records', nrows=4000000, lines=True)
 df 
 ```
 
-## Questão 1. RESULTADO
+## Questão 1. Distância média
 #### A distância média percorrida por viagens com no máximo 2 passageiros é: 
 #### 2.835128496886849 ou 2.8 (miles ou km)
 ```python
 df.loc[df['passenger_count'] == 2, 'trip_distance'].mean()
 ```
 
-## Questão 2. RESULTADO
+## Questão 2. Os 3 maiores vendors
 #### Os 3 maiores vendors em quantidade total de dinheiro arrecadado são: 
 #### 1o CMT (19549084.28)
 #### 2o VTS (19043434.00)
@@ -47,7 +47,7 @@ print(df.groupby('vendor_id')['total_amount'].count())
 print(df.groupby('vendor_id')['total_amount'].sum())
 ```
 
-## Questão 3. RESULTADO
+## Questão 3. Histograma
 #### Histograma da distribuicao mensal, nos 4 anos, de corridas pagas em dinheiro
 ```python
 # Verificar quantos tipos de pagamentos diferentes existem 
@@ -104,7 +104,7 @@ plt.show()
 ```
 <img src = "q3atento.jpg">
 
-## Questão 4. RESULTADO
+## Questão 4. Gráfico de série temporal 
 #### Gráfico de série temporal contando a quantidade de gorjetas de cada dia, nos últimos 3 meses de 2012
 ```python
 # Criar coluna de Dia, Mês e Ano
@@ -141,7 +141,7 @@ plt.show()
 ```
 <img src = "q4atento.JPG">
 
-## Questão 5. RESULTADO
+## Questão 5. Modelo lógico
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
 <img src = "ModelagemLogica.jpg">
 
