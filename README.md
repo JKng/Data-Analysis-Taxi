@@ -104,11 +104,43 @@ plt.show()
 ```
 <img src = "q3atento.jpg">
 
-## Questão 4. RESULTADO (sem gráfico)
+## Questão 4. RESULTADO
 #### Gráfico de série temporal contando a quantidade de gorjetas de cada dia, nos últimos 3 meses de 2012
 ```python
+# Criar coluna de Dia, Mês e Ano
+df['day'] = df.dropoff_datetime.str.slice(8,10)
+df['month'] = df.dropoff_datetime.str.slice(5,7)
+df['year'] = df.dropoff_datetime.str.slice(0,4)
+df
+
+# Criar coluna Data e Datafull
+df['data'] = df['month'].str.cat(df['year'],sep=".")
+df['datafull'] = df['day'].str.cat(df['data'],sep=".")
+df
+
+# Mudar tipo da coluna Data e Datafull
+df["datafull"] = df["datafull"].astype('datetime64[ns]')
+df["data"] = df["data"].astype('float')
+df
+
+# Criando um DataFrame object de uma lista
+dfq4 = pd.DataFrame(df,
+                columns =['tip_amount', 'datafull'])
+dfq4
+
+# Selecionando linhas dos últimos 3 meses de 2012
+df4 = dfq4.loc[dfq4["datafull"].between("2012-10-01", "2012-12-31")]
+df4
+
+# Questão 4. RESULTADO
+df4['tip_amount'].plot()
+plt.xlabel("Data")
+plt.ylabel("Quantidade de gorjeto")
+plt.title("Distribuição de gorjetas")
 plt.show()
 ```
+<img src = "q3atento.jpg">
+
 ## Questão 5. RESULTADO
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
 <img src = "ModelagemLogica.jpg">
