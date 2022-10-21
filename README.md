@@ -144,7 +144,7 @@ plt.show()
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
 <img src = "ModelagemLogica.jpg">
 
-## Quesito bônus
+## Quesito Bônus
 #### Qual o tempo médio das corridas nos dias de sábado e domingo e nas segunda-feira?
 ```python
 import json
