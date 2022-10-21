@@ -144,3 +144,59 @@ plt.show()
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
 <img src = "ModelagemLogica.jpg">
 
+## Quesitos bônus
+#### Qual o tempo médio das corridas nos dias de sábado e domingo e nas segunda-feira?
+```python
+import json
+import sqlite3
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib as mat
+import matplotlib.pyplot as plt
+import colorsys
+plt.style.use('seaborn-talk')
+import warnings
+warnings.filterwarnings("ignore")
+%matplotlib inline
+import datetime
+
+df = pd.read_json('atento0.json', orient='records', nrows=4000000, lines=True)
+df 
+
+# Criar colunas de Dia, Mês, Ano, Data início, Data fim
+df['day'] = df.dropoff_datetime.str.slice(8,10)
+df['month'] = df.dropoff_datetime.str.slice(5,7)
+df['year'] = df.dropoff_datetime.str.slice(0,4)
+df['pickup'] = df.pickup_datetime.str.slice(0,19)
+df['dropoff'] = df.dropoff_datetime.str.slice(0,19)
+df
+
+# Limpeza: retirar letra a fim de transformar em datetime
+df['pickup'] = df.pickup.str.replace('T', ' ')
+df['dropoff'] = df.pickup.str.replace('T', ' ')
+df
+
+# Transformar em datetime
+df["pickup"] = df["pickup"].astype('datetime64[ns]')
+df["dropoff"] = df["dropoff"].astype('datetime64[ns]')
+df
+
+# Extrair somente a hora para fazer o cáculo de subtração
+df['pickt'] = df['pickup'].dt.time 
+df['dropt'] = df['dropoff'].dt.time
+df
+
+# Realizar o cáculo de subtração
+df = df.apply(pd.to_timedelta)
+df[subtracao] = df['pickt'] - df['dropt']
+df
+
+# Extrair dia da semana da coluna 'pickup'
+
+# Selecionar linhas: sábado, domingo e segunda-feira
+
+# Calcular o tempo médio das corridas
+df.subtracao.mean()
+
+```
