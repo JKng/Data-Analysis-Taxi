@@ -144,7 +144,7 @@ plt.show()
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
 <img src = "ModelagemLogica.jpg">
 
-## Quesitos bônus
+## Quesito bônus
 #### Qual o tempo médio das corridas nos dias de sábado e domingo e nas segunda-feira?
 ```python
 import json
@@ -193,10 +193,15 @@ df[subtracao] = df['pickt'] - df['dropt']
 df
 
 # Extrair dia da semana da coluna 'pickup'
+df['dia-da-semana'] = df['pickt'].weekday()
 
 # Selecionar linhas: sábado, domingo e segunda-feira
+df['saturday'] = df.loc[df['dia-da-semana'] == saturday]
+df['sunday'] = df.loc[df['dia-da-semana'] == sunday]
+df['monday'] = df.loc[df['dia-da-semana'] == monday]
 
 # Calcular o tempo médio das corridas
-df.subtracao.mean()
-
+df.saturday.mean()
+df.sunday.mean()
+df.monday.mean()
 ```
