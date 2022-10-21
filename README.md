@@ -94,13 +94,6 @@ plt.xlabel("Mês")
 plt.ylabel("Quantidade de passageiros")
 plt.title("Distribuição de corridas pagas em dinheiro")
 plt.show()
-
-# Questão 3. Alternativa de código
-df3.data.hist(bins = 100)
-plt.xlabel("Mês")
-plt.ylabel("Quantidade de passageiros")
-plt.title("Distribuição de corridas pagas em dinheiro")
-plt.show()
 ```
 <img src = "q3atento.jpg">
 
