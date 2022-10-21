@@ -17,6 +17,7 @@ import datetime
 df = pd.read_json('atento0.json', orient='records', nrows=4000000, lines=True)
 df 
 
-<img src = "C:/Users/Ju/Downloads/q3atento.jpg">
+<img src = "q3atento.jpg">
 
+<img src = "ModelagemLogica.jpg">
 a
