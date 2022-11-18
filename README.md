@@ -1,4 +1,4 @@
-# MJK-Taxi - Análise de dados exploratória
+# NY Taxi - Análise de dados exploratória
 
 Importar Bibliotecas Python para análise de dados
 ```python
