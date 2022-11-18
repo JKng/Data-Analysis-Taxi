@@ -18,7 +18,7 @@ import datetime
 ```
 Ler o arquivo json em um DataFrame
 ```python
-df = pd.read_json('atento0.json', orient='records', nrows=4000000, lines=True)
+df = pd.read_json('nytaxi.json', orient='records', nrows=4000000, lines=True)
 df 
 ```
 
