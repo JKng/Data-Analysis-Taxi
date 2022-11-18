@@ -98,7 +98,7 @@ plt.ylabel("Quantidade de passageiros")
 plt.title("Distribuição de corridas pagas em dinheiro")
 plt.show()
 ```
-<img src = "q3atento.jpg">
+<img src = "q3.jpg">
 
 ## Questão 4. Gráfico de série temporal 
 #### Gráfico de série temporal contando a quantidade de gorjetas de cada dia, nos últimos 3 meses de 2012
@@ -138,7 +138,7 @@ plt.ylabel("Quantidade de gorjetas")
 plt.title("Gorjetas dos últimos 3 meses de 2012")
 plt.show()
 ```
-<img src = "q4atento.JPG">
+<img src = "q4.JPG">
 
 ## Questão 5. Modelo lógico
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
