@@ -26,7 +26,7 @@ df
 #### A distância média percorrida por viagens com no máximo 2 passageiros é: 
 #### 2.835128496886849 ou 2.8 (miles ou km)
 ```python
-df.loc[df['passenger_count'] == 2, 'trip_distance'].mean()
+df.loc[df['passenger_count'] <= 2, 'trip_distance'].mean()
 ```
 
 ## Questão 2. Os 3 maiores vendors
