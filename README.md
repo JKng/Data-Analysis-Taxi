@@ -3,7 +3,6 @@
 Importar Bibliotecas Python para análise de dados
 ```python
 import json 
-import sqlite3 
 import pandas as pd
 import numpy as np
 import seaborn as sns
