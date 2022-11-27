@@ -1,4 +1,8 @@
+Editor
 https://pandao.github.io/editor.md/en.html
+
+Badges
+https://github.com/iuricode/readme-template/blob/main/badges/badges.md
 
 ### Features
 
