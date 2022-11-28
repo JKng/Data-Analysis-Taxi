@@ -12,6 +12,10 @@ https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-wr
 
 <img src="source" width="10" height="10">
 
+Github and Linkedin: Featured section of your LinkedIn profile
+
+https://towardsdatascience.com/how-to-feature-your-github-repositories-on-linkedin-56078e1ffddb#:~:text=Go%20to%20the%20Featured%20section,up%20window%2C%20then%20click%20Add.
+
 ### Features
 
 - Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);
