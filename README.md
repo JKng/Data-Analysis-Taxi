@@ -1,6 +1,6 @@
 # NY Taxi - Exploratory Data Analysis
 
-### *Python | SQL | Google Colab | PowerBI*
+### *Python | Google Colab | PowerBI*
 ### This is an online challenge I recently completed. This was a great opportunity for me to develop my skills in data analysis.
 
 Importar Bibliotecas Python para análise de dados
