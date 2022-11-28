@@ -1,4 +1,7 @@
-# NY Taxi - Análise de dados exploratória
+# NY Taxi - Exploratory Data Analysis
+
+### *Python | SQL | Google Colab | PowerBI*
+### This is an online challenge I recently completed. This was a great opportunity for me to develop my skills in data analysis.
 
 Importar Bibliotecas Python para análise de dados
 ```python
@@ -143,7 +146,7 @@ plt.show()
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
 <img src = "ModelagemLogica.jpg">
 
-#### Qual o tempo médio das corridas nos dias de sábado, domingo e nas segundas-feiras?
+#### Questão 6. Qual o tempo médio das corridas nos dias de sábado, domingo e nas segundas-feiras?
 ```python
 import json
 import sqlite3
