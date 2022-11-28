@@ -100,7 +100,8 @@ plt.ylabel("Quantidade de passageiros")
 plt.title("Distribuição de corridas pagas em dinheiro")
 plt.show()
 ```
-<img src = "q3.jpg">
+
+<img src = "q3.jpg" width="550" height="300">
 
 ## Questão 4. Gráfico de série temporal 
 #### Gráfico de série temporal contando a quantidade de gorjetas de cada dia, nos últimos 3 meses de 2012
@@ -140,13 +141,15 @@ plt.ylabel("Quantidade de gorjetas")
 plt.title("Gorjetas dos últimos 3 meses de 2012")
 plt.show()
 ```
-<img src = "q4.JPG">
+<img src = "q4.JPG" width="550" height="300">
 
 ## Questão 5. Modelo lógico
 #### Modelo lógico de dados construído para um Data Warehouse para o departamento de Recursos Humanos para uma empresa do segmento de Contact Center. 
-<img src = "ModelagemLogica.jpg">
 
-#### Questão 6. Qual o tempo médio das corridas nos dias de sábado, domingo e nas segundas-feiras?
+<img src = "ModelagemLogica.jpg" width="900" height="400">
+
+## Questão 6. Qual o tempo médio das corridas nos dias de sábado, domingo e nas segundas-feiras?
+
 ```python
 import json
 import sqlite3
