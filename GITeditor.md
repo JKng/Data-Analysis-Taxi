@@ -7,6 +7,9 @@ https://github.com/iuricode/readme-template/blob/main/badges/badges.md
 GitHub Profile Readme Generator
 https://arturssmirnovs.github.io/github-profile-readme-generator/
 
+formatting-syntax
+https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 <img src="source" width="10" height="10">
 
 ### Features
