@@ -7,7 +7,7 @@ https://github.com/iuricode/readme-template/blob/main/badges/badges.md
 GitHub Profile Readme Generator
 https://arturssmirnovs.github.io/github-profile-readme-generator/
 
-<img src="source" width="800" height="350">
+<img src="source" width="10" height="10">
 
 ### Features
 
